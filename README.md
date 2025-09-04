@@ -5,7 +5,7 @@ It includes **notes, internal assessments, lab exercises, and Midsem question pa
 
 ---
 
-## 📂 Repository Contents
+## <img src="https://github.com/user-attachments/assets/f3dcee8e-e008-457a-97fb-d3848b425713" height="30px" style="vertical-align:text-bottom;"> Repository Contents
 
 ```bash
 Semester/
@@ -41,7 +41,7 @@ This repository aims to:
 
 ---
 
-## 🤝 Contribution
+##  <img src="https://github.com/user-attachments/assets/1aafab50-1305-47c4-87ab-40a9d64f3067" alt="contribution gif" width="35"/> Contribution
 If you are from the same batch or want to contribute additional resources:
 - Fork the repository.  
 - Add your files under the correct semester/subject.  
@@ -49,7 +49,7 @@ If you are from the same batch or want to contribute additional resources:
 
 ---
 
-## ⚠️ Disclaimer
+## <img src="https://github.com/user-attachments/assets/64abffeb-9a67-4e47-a3ec-69036aa3a343" height="30px" style="position: bottom;"> Disclaimer
 This repository is meant for **educational purposes only**.  
 All content is based on **personal academic resources** collected during the course. Please use them responsibly and avoid plagiarism in official submissions.  
 
