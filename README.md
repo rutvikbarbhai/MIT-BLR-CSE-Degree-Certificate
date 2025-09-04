@@ -4,16 +4,17 @@ This repository is a collection of **academic resources** from the **B.Tech in C
 It includes **notes, internal assessments, lab exercises, and Midsem question papers** to help current and future students with their coursework and exam preparation.  
 
 ---
-## 🎯 Purpose
+## <img src="https://github.com/user-attachments/assets/d3a7713c-0fa3-4fba-a8b3-1cb60e4dafce"  height="25px" style="position: bottom;">  Purpose
+
 This repository aims to:
 - Provide quick access to reliable **study material**.  
 - Help juniors and peers in **exam preparation**.  
 - Serve as a **reference archive** for future batches.
 
-## 🏛️ About the Program
+## <img src="https://github.com/user-attachments/assets/c867040d-ee55-406b-959b-332d3d9997b1" height="25px" style="vertical-align: middle; margin-right: 5px;"> About the Program
 - **Degree:** B.Tech in Computer Science & Engineering  
-- **Institute:** Manipal Institute of Technology, Manipal  
-- **Batch:** 2022 – 2026 (Graduating July 2026)  
+- **Institute:** Manipal Institute of Technology, Manipal & Bengaluru  
+- **Batch:** Sep 2022 – July 2026  
 ## <img src="https://github.com/user-attachments/assets/f3dcee8e-e008-457a-97fb-d3848b425713" height="30px" style="vertical-align:text-bottom;"> Repository Contents
 
 ```bash
