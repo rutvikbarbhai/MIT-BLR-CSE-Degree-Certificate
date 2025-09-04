@@ -11,7 +11,7 @@ This repository aims to:
 - Help juniors and peers in **exam preparation**.  
 - Serve as a **reference archive** for future batches.
 
-## 🏛️ About the Program
+## <img src="https://github.com/user-attachments/assets/c867040d-ee55-406b-959b-332d3d9997b1" height="25px" style="vertical-align: middle; margin-right: 5px;"> About the Program
 - **Degree:** B.Tech in Computer Science & Engineering  
 - **Institute:** Manipal Institute of Technology, Manipal  
 - **Batch:** 2022 – 2026 (Graduating July 2026)  
