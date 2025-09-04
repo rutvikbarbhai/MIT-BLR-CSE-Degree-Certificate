@@ -1,0 +1,23 @@
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 300px;
+    float: right;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+    background-color: #cdecec;
+}
+
+table tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+img {
+    height: 250px;
+}
