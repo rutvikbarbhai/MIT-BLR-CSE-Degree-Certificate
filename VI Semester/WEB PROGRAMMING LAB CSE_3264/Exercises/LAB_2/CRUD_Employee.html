@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee CRUD Operations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .crud-buttons button {
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Employee Management</h2>
+
+        <!-- Employee Form -->
+        <div>
+            <h3>Add / Update Employee</h3>
+            <div class="form-group">
+                <label for="empName">Employee Name</label>
+                <input type="text" id="empName" placeholder="Enter employee name">
+            </div>
+            <div class="form-group">
+                <label for="empAge">Age</label>
+                <input type="number" id="empAge" placeholder="Enter employee age">
+            </div>
+            <div class="form-group">
+                <label for="empDept">Department</label>
+                <input type="text" id="empDept" placeholder="Enter department">
+            </div>
+            <div class="form-group">
+                <label for="empSalary">Salary</label>
+                <input type="number" id="empSalary" placeholder="Enter salary">
+            </div>
+            <button onclick="addEmployee()">Add Employee</button>
+            <button onclick="updateEmployee()">Update Employee</button>
+        </div>
+
+        <!-- Employee Table -->
+        <div>
+            <h3>Employee List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTable">
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        let employees = [];
+        let currentEditId = null;
+
+        function addEmployee() {
+            const name = document.getElementById('empName').value;
+            const age = document.getElementById('empAge').value;
+            const dept = document.getElementById('empDept').value;
+            const salary = document.getElementById('empSalary').value;
+
+            if (name && age && dept && salary) {
+                const newEmployee = {
+                    id: employees.length + 1,
+                    name,
+                    age,
+                    dept,
+                    salary,
+                };
+
+                employees.push(newEmployee);
+                renderTable();
+                clearForm();
+            } else {
+                alert('Please fill all fields.');
+            }
+        }
+
+        function updateEmployee() {
+            if (currentEditId !== null) {
+                const name = document.getElementById('empName').value;
+                const age = document.getElementById('empAge').value;
+                const dept = document.getElementById('empDept').value;
+                const salary = document.getElementById('empSalary').value;
+
+                const index = employees.findIndex(emp => emp.id === currentEditId);
+                employees[index] = { id: currentEditId, name, age, dept, salary };
+                currentEditId = null;
+                renderTable();
+                clearForm();
+            } else {
+                alert('No employee selected for update.');
+            }
+        }
+
+        function deleteEmployee(id) {
+            employees = employees.filter(emp => emp.id !== id);
+            renderTable();
+        }
+
+        function editEmployee(id) {
+            const employee = employees.find(emp => emp.id === id);
+
+            document.getElementById('empName').value = employee.name;
+            document.getElementById('empAge').value = employee.age;
+            document.getElementById('empDept').value = employee.dept;
+            document.getElementById('empSalary').value = employee.salary;
+
+            currentEditId = id;
+        }
+
+        function renderTable() {
+            const tableBody = document.getElementById('employeeTable');
+            tableBody.innerHTML = '';
+
+            employees.forEach(emp => {
+                const row = `<tr>
+                    <td>${emp.id}</td>
+                    <td>${emp.name}</td>
+                    <td>${emp.age}</td>
+                    <td>${emp.dept}</td>
+                    <td>${emp.salary}</td>
+                    <td>
+                        <button onclick="editEmployee(${emp.id})">Edit</button>
+                        <button onclick="deleteEmployee(${emp.id})">Delete</button>
+                    </td>
+                </tr>`;
+                tableBody.innerHTML += row;
+            });
+        }
+
+        function clearForm() {
+            document.getElementById('empName').value = '';
+            document.getElementById('empAge').value = '';
+            document.getElementById('empDept').value = '';
+            document.getElementById('empSalary').value = '';
+        }
+    </script>
+</body>
+</html>

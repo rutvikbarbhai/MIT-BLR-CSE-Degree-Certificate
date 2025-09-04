@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Table and Image Animation</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            margin: 20px ;
+            position: absolute;
+            right: 0; 
+            transition: 2s ease;
+            height: 150px;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: blanchedalmond;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            position: absolute;
+            top: 0;
+            margin-right: 20px;
+            margin-top: 280px;
+            right: 0; 
+            transition: 2s ease;
+        }
+
+        button {
+            position:relative;
+            margin-top: 20px; 
+        }
+        h2{
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <table id="myTable">
+        <h2 id="hw">HELLO WORLD!</h2>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        <tr>
+            <td>Data 1</td>
+            <td>Data 2</td>
+            <td>Data 3</td>
+        </tr>
+        <tr>
+            <td>Data 4</td>
+            <td>Data 5</td>
+            <td>Data 6</td>
+        </tr>
+        <tr>
+            <td>Data 7</td>
+            <td>Data 8</td>
+            <td>Data 9</td>
+        </tr>
+    </table>
+
+    <img id="myImage" src="football.jpeg" alt="Image">
+
+    <button onclick="moveTableAndImage()">Move Right to Left</button>
+</div>
+
+<script>
+    function moveTableAndImage() {
+        // Animate table and image to move from right to left
+        $("#myTable").animate({right: "50%"});
+        $("#myImage").animate({right: "50%"});
+    }
+</script>
+</body>
+</html>

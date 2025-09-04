@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Bio-Data Form</title>
+    <!-- <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 5px;
+        }
+        .radio-group label, .checkbox-group label {
+            font-weight: normal;
+            margin-right: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f9;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style> -->
+    <link rel="stylesheet" href="student_bio-data.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Student Bio-Data Form</h2>
+        <form>
+            <!-- Name Field -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Date of Birth Field -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Gender Radio Buttons -->
+            <label>Gender</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Email Field -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Interests Checkboxes -->
+            <label>Interests</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="sports" name="interests" value="Sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="Music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="art" name="interests" value="Art">
+                <label for="art">Art</label>
+                <input type="checkbox" id="technology" name="interests" value="Technology">
+                <label for="technology">Technology</label>
+            </div>
+
+            <!-- Academic Details Table -->
+            <label>Academic Details</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Class</th>
+                        <th>School/College</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10th</td>
+                        <td><input type="text" name="school_10"></td>
+                        <td><input type="text" name="year_10"></td>
+                        <td><input type="text" name="percentage_10"></td>
+                    </tr>
+                    <tr>
+                        <td>12th</td>
+                        <td><input type="text" name="school_12"></td>
+                        <td><input type="text" name="year_12"></td>
+                        <td><input type="text" name="percentage_12"></td>
+                    </tr>
+                    <tr>
+                        <td>Graduation</td>
+                        <td><input type="text" name="college_grad"></td>
+                        <td><input type="text" name="year_grad"></td>
+                        <td><input type="text" name="percentage_grad"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
