@@ -11,7 +11,7 @@ It includes **notes, internal assessments, lab exercises, and Midsem question pa
 Semester/
 ├── 📁 LAB CSE_40XX/           
 ├── 📁 THEORY CSE_40XX/             
-│   ├── 📁 Academic Notes/     
+│   ├── 📁 Academic Notes  
 │   ├── 📁 Internal Assessment (Quiz)
 │   ├── 📁 Internal Assessment (Assignment)
 │   └── 📁 Midsem Question Paper
