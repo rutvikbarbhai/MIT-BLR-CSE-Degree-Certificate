@@ -12,8 +12,9 @@ This repository aims to:
 - Serve as a **reference archive** for future batches.
 
 ## <img src="https://github.com/user-attachments/assets/c867040d-ee55-406b-959b-332d3d9997b1" height="25px" style="vertical-align: middle; margin-right: 5px;"> About the Program
-- **Degree:** B.Tech in Computer Science & Engineering  
-- **Institute:** Manipal Institute of Technology, Manipal & Bengaluru  
+- **Degree:** B.Tech in Computer Science & Engineering
+- **University** Manipal Academy of Higher Education, Manipal
+- **Institute:** Manipal Institute of Technology, Bengaluru  
 - **Batch:** Sep 2022 – July 2026  
 ## <img src="https://github.com/user-attachments/assets/f3dcee8e-e008-457a-97fb-d3848b425713" height="30px" style="vertical-align:text-bottom;"> Repository Contents
 
