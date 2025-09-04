@@ -43,9 +43,18 @@ This repository aims to:
 
 ##  <img src="https://github.com/user-attachments/assets/1aafab50-1305-47c4-87ab-40a9d64f3067" alt="contribution gif" width="35"/> Contribution
 If you are from the same batch or want to contribute additional resources:
-- Fork the repository.  
-- Add your files under the correct semester/subject.  
-- Create a pull request.  
+
+### Steps to Contribute
+
+1. **Fork the Repository**
+   - Click on the **Fork** button on the top-right corner of this page.
+
+2. **Clone Your Fork**
+   ```bash
+   git clone https://github.com/<your-username>/MIT-BLR-CSE-Degree-Certificate.git
+   cd MIT-BLR-CSE-Degree-Certificate
+   ''''
+  
 
 ---
 
