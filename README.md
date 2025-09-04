@@ -4,7 +4,8 @@ This repository is a collection of **academic resources** from the **B.Tech in C
 It includes **notes, internal assessments, lab exercises, and Midsem question papers** to help current and future students with their coursework and exam preparation.  
 
 ---
-## 🎯 Purpose
+## <img src="https://github.com/user-attachments/assets/d3a7713c-0fa3-4fba-a8b3-1cb60e4dafce"  height="25px" style="position: bottom;">  Purpose
+
 This repository aims to:
 - Provide quick access to reliable **study material**.  
 - Help juniors and peers in **exam preparation**.  
