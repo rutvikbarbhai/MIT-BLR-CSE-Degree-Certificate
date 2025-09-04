@@ -33,7 +33,7 @@ This repository aims to:
 
 ---
 
-## 📌 How to Use
+## <img src="https://github.com/user-attachments/assets/d91c2841-14ca-4283-a7fc-a93fc1e996af" height="22px" style="vertical-align:text-bottom;"> How to Use
 1. Navigate through semester-wise folders.  
 2. Open the subject of interest.  
 3. Access notes, IA, labs, or question papers.  
