@@ -1,4 +1,4 @@
-# 🏛️ MIT CSE Degree Certificate (Batch of 2026)
+# 🏛️ MIT Manipal & Bengaluru CSE Degree Certificate (Batch of 2026)
 
 This repository is a collection of **academic resources** from the **B.Tech in Computer Science & Engineering (CSE)** program at **Manipal Institute of Technology (MIT), Bengaluru**, during the **Batch of 2026 (July pass-out)**.  
 It includes **notes, internal assessments, lab exercises, and Midsem question papers** to help current and future students with their coursework and exam preparation.  
