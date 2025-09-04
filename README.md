@@ -7,20 +7,17 @@ It includes **notes, internal assessments, lab exercises, and Midsem question pa
 
 ## 📂 Repository Contents
 
-- 📝 **Notes**  
-  Well-structured notes for core and elective courses across all semesters.  
-
-- 🧾 **Internal Assessments (IA)**  
-  Includes **quizzes and assignments** conducted during the course.  
-
-- 🧪 **Lab Exercises**  
-  Source codes, lab manuals, and solutions for practical sessions.  
-
-- 📄 **Previous Year Question Papers**  
-  Mid-semester and end-semester exam papers with **detailed solutions**.  
-
----
-
+```bash
+Semester/
+├── 📁 LAB CSE_40XX/           
+├── 📁 THEORY CSE_40XX/             
+│   ├── 📁 Academic Notes/     
+│   ├── 📁 Internal Assessment (Quiz)
+│   ├── 📁 Internal Assessment (Assignment)
+│   └── 📁 Midsem Question Paper
+│   
+└── README.md            # Project documentation
+```
 ## 🎯 Purpose
 This repository aims to:
 - Provide quick access to reliable **study material**.  
